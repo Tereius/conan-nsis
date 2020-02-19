@@ -8,11 +8,11 @@ import os
 class NsisConan(ConanFile):
     name = "NSIS"
     version = "3.03"
-    url = "https://github.com/Tereius/conan-nsis"
-    homepage = "https://sourceforge.net/projects/nsis"
     description = "NSIS (Nullsoft Scriptable Install System) is a professional open source system to create Windows installers."
-    license = "https://www.zlib.net/zlib_license.html"
-    settings = {"os": ["Windows"]}
+    homepage = "https://sourceforge.net/projects/nsis"
+    url = "https://github.com/Tereius/conan-nsis"
+    license = "zlib-acknowledgement"
+    settings = {"os_build": ["Windows"]}
 
     def source(self):
         source_url = "https://sourceforge.net/projects/nsis/files/NSIS%203/3.03/nsis-3.03.zip/download?use_mirror=netcologne#"
