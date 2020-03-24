@@ -15,7 +15,8 @@ class NsisConan(ConanFile):
     settings = {"os_build": ["Windows"]}
 
     def source(self):
-        source_url = "https://sourceforge.net/projects/nsis/files/NSIS%203/3.03/nsis-3.03.zip/download?use_mirror=netcologne#"
+    
+        source_url = "https://sourceforge.net/projects/nsis/files/NSIS%203/3.03/nsis-3.03.zip/download?use_mirror=autoselect"
         tools.get(source_url, filename="nsis-%s.zip" % self.version)
 
     def package(self):
