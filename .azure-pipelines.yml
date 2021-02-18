@@ -22,7 +22,8 @@ jobs:
         CONAN_USERNAME: "tereius",
         CONAN_CHANNEL: "stable",
         CONAN_REMOTES: "https://tereius.jfrog.io/artifactory/api/conan/public-conan",
-        CONAN_BASE_PROFILE_OSBUILD: "$(conanBuildOS)"
+        CONAN_BASE_PROFILE_OSBUILD: "$(conanBuildOS)",
+        CONAN_BASE_PROFILE_ARCHBUILD: "x86_64"
       }
 
 - job: Upload
