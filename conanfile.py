@@ -12,15 +12,17 @@ class NsisConan(ConanFile):
     homepage = "https://sourceforge.net/projects/nsis"
     url = "https://github.com/Tereius/conan-nsis"
     license = "zlib-acknowledgement"
-    settings = {"os_build": ["Windows"]}
+    settings = {"os_build": ["Windows"], "arch_build": ["x86_64"]}
 
     def source(self):
-    
         source_url = "https://sourceforge.net/projects/nsis/files/NSIS%203/3.03/nsis-3.03.zip/download?use_mirror=autoselect"
         tools.get(source_url, filename="nsis-%s.zip" % self.version)
 
     def package(self):
         self.copy(pattern="*", src="nsis-%s" % self.version)
+
+    def package_id(self):
+        self.info.include_build_settings()
 
     def package_info(self):
         self.output.info('Adding NSIS binaries to PATH: %s' % self.package_folder)
