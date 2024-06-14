@@ -1,0 +1,13 @@
+{
+  "version": "3.10",
+  "projectName": "nsis",
+  "projectDescription": "NSIS (Nullsoft Scriptable Install System) is a professional open source system to create Windows installers.",
+  "vendor": "Björn Stresing",
+  "contact": "bjoern.stresing@gmx.de",
+  "domain": "com.github.tereius",
+  "copyrightYear": "2024",
+  "repository": "https://github.com/Tereius/conan-nsis",
+  "topics": ["NSIS", "Installer", "Nullsoft"],
+  "homepage": "https://sourceforge.net/projects/nsis/",
+  "license": "zlib/libpng"
+}
